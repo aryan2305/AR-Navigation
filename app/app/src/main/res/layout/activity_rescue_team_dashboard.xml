@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Activities.RescueTeamDashboard">
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/button_ar_camera"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poiretone_regular"
+        android:textStyle="bold"
+        app:neumorph_backgroundColor="#ff6663"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="AR Camera" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/snd_msg2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/poiretone_regular"
+        android:textStyle="bold"
+        android:onClick="button_click2"
+        app:neumorph_shapeType="flat"
+        android:textAlignment="center"
+        app:neumorph_backgroundColor="#ff6663"
+        android:text="Get Locations"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerView2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" />
+</LinearLayout>
